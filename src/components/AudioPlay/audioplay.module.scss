@@ -1,0 +1,129 @@
+@import "../../scss/variables.scss";
+.audio__wrapper{
+   width: 100vw;
+   height: 112px;
+    background-color:#181818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+}
+.player__component{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    width: 632px;
+    button  {
+
+        border: none;
+        background-color: transparent;
+        &:first-of-type, &:last-of-type{
+            svg{
+                font-size: 32px;
+                color: #BABABA;
+             } 
+        }
+       
+     
+        
+    }
+    .play__pause{
+        font-size: 40px;
+        color: $main-text-color;
+    }
+
+   
+}
+.music__length{
+    width: 600px;
+    height: 5px;
+    cursor: pointer;
+   &::-webkit-slider-thumb{
+   opacity: 0;
+
+   }
+}
+audio{
+    display: none;
+}
+
+.player__btns{
+    display: flex;
+    gap: 76px;
+    color: $main-text-color;
+}
+.volume{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 30px;
+    svg{
+        font-size: 26px;
+        color: $main-text-color;
+    }
+    input{
+        height: 5px;
+        border-radius: 4px;
+
+        &::-webkit-slider-thumb{
+            opacity: 0;
+        }
+    }
+}
+.player__info{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+
+    img{
+        position: absolute;
+        width: 310px;
+        height: 310px;
+        top: -341px;
+        left: -20px;
+        border: transparent;
+    }
+
+    svg{
+        font-size: 26px;
+        color: #63CF6C;
+    }
+}
+.player__info__content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p{
+        color: $main-text-color;
+        font-size: $main-normal-font-size;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+    strong{
+        color:$main-gray-text-color;
+        font-size: $main-small-font-size;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
+}
+.music__length{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    p{
+        color: #A6A6A6;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        white-space: nowrap;
+    }
+}

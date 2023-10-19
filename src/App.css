@@ -1,0 +1,26 @@
+.app{
+  position: relative;
+  display: flex;
+  background: linear-gradient(180deg, #3333A3 5.09%, #121212 33.4%);
+  
+}
+.react__app{
+  display: flex;
+  background: linear-gradient(180deg, #DEF628 0.09% 20px, #121212 43.28%);
+  position: relative;
+
+}
+.like-app{
+  display: flex;
+  background: linear-gradient(180deg, #604EC1 5.09%, #121212 43.28%);
+  position: relative;
+  
+}
+.audio-play{
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+}

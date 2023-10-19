@@ -1,0 +1,313 @@
+@import "../../scss/variables.scss";
+.like__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 200px;
+    
+   
+   
+}
+.arrows{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    p{
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        svg{
+            font-size: 24px;
+            color: $main-text-color;
+        }
+    }
+}
+.likepage__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.likepage__top__element{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    width: 155px;
+    padding: 3px;
+    color: $main-text-color;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.80);
+    justify-content: center;
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+.likepage__info{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .like{
+        width: 297px;
+        height: 297px;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+        background:linear-gradient(#3822EA, #C7E9D7) ;
+        display: grid;
+        place-items: center;
+    
+        svg{
+           font-size: 120px;
+        }
+        
+    }
+}
+.likepage__content{
+ strong{
+    color: $main-text-color;
+    letter-spacing: -0.32px;
+    font-size: $main-small-font-size;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    width: 40px;
+    white-space: wrap;
+    display: block;
+}
+h1{
+    color: $main-text-color;
+    font-style: normal;
+    font-size: 122px;
+    line-height: normal;
+    font-weight: 900;
+    letter-spacing: -7.32px;
+}
+}
+.likepage__quantity{
+    display: flex;
+    align-items: center;
+    gap:8px ;
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    p{
+        color: $main-text-color;
+        font-size: $main-medium-font-size;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 700;
+        letter-spacing: 0.18px;
+    }
+    ul {
+        li{
+            list-style-type: disc;
+            color: $main-text-color;
+            font-size: $main-normal-font-size;
+            font-weight: 450;
+            font-style: normal;
+            letter-spacing: 0.18px;
+            line-height: normal;
+        }
+    }
+}
+
+.songs__wrapper{
+    margin-top: $main-large-font-size;
+    width: 100%;
+    background: #121212;
+    width: 100%;
+   
+}
+.songs__title{
+    width: 100%;
+    padding: 0 60px 0 20px;
+    border-collapse: collapse;
+    
+    thead{
+       height: 48px;
+        border-bottom: 1px solid #666666;
+       
+        th{
+            text-align: left;
+            font-size:$main-small-font-size ;
+            font-style: normal;
+            font-weight: 450;
+            line-height: normal;
+            letter-spacing: 1.44px;
+            color: $main-gray-text-color;
+            padding:5px 10px ;
+            &:first-of-type{
+              font-size: 22px;
+            }
+           
+           
+            svg{
+                font-size: 28px;
+            }
+          
+        }
+      
+    }
+
+  
+   tbody{
+    .space{
+        height: 20px;
+    }
+    td{
+        padding: 5px 10px;
+    }
+    
+
+ svg{
+        font-size: 28px;
+        color: $main-text-color;
+    }
+    &:first-of-type{
+        color: $main-text-color;
+        font-size: 22px;
+      
+    }
+  
+   }
+
+}
+.song__info{
+    display: flex;
+    gap: 21px;
+    img{
+        width: 52px ;
+        height: 52px;
+    }
+
+    tr{
+       height: 72px;
+       display: flex;
+       align-items: center;
+
+       
+    }
+}
+
+.song__author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    font-size: $main-medium-font-size;
+    font-weight: 450;
+    letter-spacing: 0.2px;
+    span:nth-child(1){
+        color: $main-text-color;
+    }
+    span:nth-child(2){
+        color: $main-gray-text-color;
+    }
+ 
+  
+}
+.time{
+  
+  height: 100%;
+  
+    span{
+        height:28px;
+        color: $main-text-color;
+        font-style: normal;
+        font-size: $main-medium-font-size;
+        line-height: normal;
+        font-weight: 450;
+        letter-spacing: -0.6px;
+    }
+
+}
+.album__name{
+
+
+    color: $main-gray-text-color;    
+    font-size: $main-normal-font-size;
+    font-weight: 450;
+    font-style: normal;
+    line-height: normal;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play_icons{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    height: 72px;
+    align-items: center;
+    width: 100%;
+}
+.play{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #65D36E;
+    padding: 5px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        font-size: 44px;
+        color: #000000;
+    }
+}
+.like{
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    svg {
+        font-size: 48px;
+        color: $main-text-color;
+    }
+}
+.download{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: 3px solid  $main-text-color;
+    svg{
+        font-size: 30px;
+        color: $main-text-color;
+    }
+}
+.dots{
+    svg{
+        font-size: 40px;
+        color: $main-text-color;  
+    }
+}
+
+.search__icons{
+    display: flex;
+    gap: 35px;
+    color: $main-text-color;
+    p{
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        font-size: $main-normal-font-size;
+        white-space: nowrap;
+    }
+    svg {
+        font-size: 23px;
+    }
+}

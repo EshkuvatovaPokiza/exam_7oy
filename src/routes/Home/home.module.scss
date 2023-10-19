@@ -1,0 +1,77 @@
+@import  "../../scss/variables.scss";
+@import "../../scss/font.scss";
+
+.home{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 200px;
+    
+}
+.arrows{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    p{
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        svg{
+            font-size: 24px;
+            color: $main-text-color;
+        }
+    }
+}
+.home__title{
+color: $main-text-color;
+font-size: 39px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.39px;
+margin-bottom: 30px;
+}
+.home__menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px  15px;
+    li{
+        display: flex;
+        align-items: center;
+      
+       border-radius: $main-border-radius;
+        white-space: nowrap;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding-right: 5px;
+    }
+
+    img{
+        
+        width: 82px;
+        height: 82px;
+        border-top-left-radius: $main-border-radius;
+        border-bottom-left-radius: $main-border-radius;
+       
+    }
+    p{
+        color: $main-text-color;
+        font-size: $main-medium-font-size;        
+        font-style: normal;        
+        font-weight: 700;        
+        line-height: normal;        
+        letter-spacing: 0.2px;
+    }
+}
+.categories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
