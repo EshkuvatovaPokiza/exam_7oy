@@ -34,10 +34,10 @@
 }
 .category__menu{
     display: grid;
-    grid-template-columns: repeat(4,230px);
-    gap: 22px;
+    grid-template-columns: repeat(4,220px) ;
+    gap: 30px;
     li{
-        width: 230px;
+        width: 220px;
         height: 324px;
         border-radius: 8px;
         display: flex;
@@ -49,8 +49,8 @@
         fill: url(<path-to-image>), lightgray -215.704px -66.182px / 581.818% 330.736% no-repeat;
        filter: drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.35));
         img{
-            width: 182px;
-            height: 182px;
+            width: 160px;
+            height: 160px;
             border-radius: $main-border-radius;
             margin: 0 auto;
         }

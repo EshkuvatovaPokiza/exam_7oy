@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState  = {
      musicState:false, 
-    oneSong:{}
+    oneSong:[]
    
   }
 
@@ -14,7 +14,7 @@ const initialState  = {
   reducers: {
     SendAudio: (state,action) => {
      
-      state.oneSong=action.payload
+      state.oneSong.unshift(action.payload)
       state.musicState=true
       console.log(state)
       console.log(action)

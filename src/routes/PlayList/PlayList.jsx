@@ -11,7 +11,7 @@ const ACCESS_TOKEN =localStorage.getItem("access_token");
 
 const PlayList = () => {
   const params =useParams()
-  const [onePlayList,setOnePlaylIst]=useState({})
+  const [onePlayList,setOnePlaylIst]=useState(null)
 console.log(params)
   useEffect(()=>{
     const getOnePlayList =  ()=>{
@@ -33,6 +33,8 @@ console.log(params)
       getOnePlayList()
   },[params.id])
 console.log(onePlayList)
+const image =onePlayList?.images[0]?.url
+console.log(image)
 
   return (
     
@@ -49,7 +51,7 @@ console.log(onePlayList)
 
 
 <div className={classes.playlist__info}  >
-   <img src={onePlayList?.images[0].url} alt="" />
+   <img src={image} alt="" />
   <div className={classes.playlist__content}  >
 
     <strong>Public Playlist</strong>

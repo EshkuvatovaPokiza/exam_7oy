@@ -84,7 +84,7 @@ getPlaylists()
       </Routes>
       <RightSidebar/>
       
-     <div     className="audio-play" >   <AudioPlay    />  </div>
+     <div     className="audio-play" >    <AudioPlay    />   </div>
        </div>
        
     </>

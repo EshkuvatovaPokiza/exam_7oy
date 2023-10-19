@@ -39,13 +39,13 @@ const AudioPlay = () => {
  
   return (
     <div  className={classes.audio__wrapper}   >
-         <audio  src={music?.track?.preview_url}  controls    autoPlay  ref={ref}   className={classes.audio}     />
+         <audio  src={music[0]?.track?.preview_url}  controls    autoPlay  ref={ref}   className={classes.audio}     />
         
 
          <div className={classes.player__info}  >
-          <img src={music?.track?.album?.images[0]?.url} alt="" />
-         <div className={classes.player__info__content}  >   <p> {music?.track?.name} </p>
-            <strong>   {music?.track?.album?.artists[0]?.name}  </strong></div>
+          <img src={music[0]?.track?.album?.images[0]?.url} alt="" />
+         <div className={classes.player__info__content}  >   <p> {music[0]?.track?.name} </p>
+            <strong>   {music[0].track?.album?.artists[0]?.name}  </strong></div>
            {  <BsFillHeartFill/>  }
          </div>
         
@@ -72,7 +72,7 @@ const AudioPlay = () => {
             <div   className={classes.music__length}  >
               <p> 00:00  </p>
             <input type="range"    className={classes.music__length}  />
-            <p>  {Math.floor((music?.track?.duration_ms)/60000)} : {Math.floor(((music?.track?.duration_ms)%60000)/1000).toString().padStart(2,'0')}  </p> 
+            <p>  {Math.floor((music[0]?.track?.duration_ms)/60000)} : {Math.floor(((music[0]?.track?.duration_ms)%60000)/1000).toString().padStart(2,'0')}  </p> 
             </div>
            
 

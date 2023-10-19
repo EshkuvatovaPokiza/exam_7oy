@@ -10,3 +10,12 @@ const Container = ({children}) => {
     )
   }
   export {Container}
+
+  const SidebarContainer =({children}) =>{
+    return(
+      <div   className={classes.sidebar__container} >
+
+      </div>
+    )
+  }
+  export {SidebarContainer}
