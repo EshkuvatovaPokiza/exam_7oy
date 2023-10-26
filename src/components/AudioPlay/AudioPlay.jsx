@@ -43,10 +43,10 @@ const AudioPlay = () => {
         
 
          <div className={classes.player__info}  >
-          <img src={music[0]?.track?.album?.images[0]?.url} alt="" />
-         <div className={classes.player__info__content}  >   <p> {music[0]?.track?.name} </p>
-            <strong>   {music[0].track?.album?.artists[0]?.name}  </strong></div>
-           {  <BsFillHeartFill/>  }
+       <div  className={classes.audioplay__image}  > {MusicState===true ?     <img src={music[0]?.track?.album?.images[0]?.url} alt="" />  :<></> } </div>
+         <div className={classes.player__info__content}  >   <p> {MusicState===true ? music[0]?.track?.name :<></>} </p>
+            <strong>   {MusicState===true ?music[0]?.track?.album?.artists[0]?.name :<></>}  </strong></div>
+           { MusicState===true ?  <BsFillHeartFill/>  :<></>}
          </div>
         
         <div className={classes.player__component}  >

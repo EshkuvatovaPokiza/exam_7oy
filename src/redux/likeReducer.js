@@ -21,7 +21,9 @@ const initialState  = {
       
     }
     else {
-      state.LikedSongs.push(action.payload)
+
+   state.LikedSongs.push(action.payload)
+      
     }
     
     },

@@ -73,7 +73,7 @@ getPlaylists()
  
 
   return (
-    <>
+   
       <div  className={location.pathname.includes("/playlist")  ?  "react__app" : location.pathname.includes("/like")  ?  "like-app" :  "app"    } >  
       <LeftSidebar data={data}  />
       <Routes>
@@ -87,7 +87,7 @@ getPlaylists()
      <div     className="audio-play" >    <AudioPlay    />   </div>
        </div>
        
-    </>
+   
   )
 }
 

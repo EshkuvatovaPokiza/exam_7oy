@@ -20,7 +20,7 @@ const Category = ( {title, CategoryArray }) => {
               <img src={images[0].url} alt="" />
               <h3 title={name.toLowerCase().split("").toSpliced(0  , 1 , name.charAt(0).toUpperCase()).join("")}  > {   name.length >25?  name.toLowerCase().split("").toSpliced(0  , 1 , name.charAt(0).toUpperCase()).slice(0 , 25).join("") + "..."  :name.toLowerCase().split("").toSpliced(0  , 1 , name.charAt(0).toUpperCase()).join("") } </h3>
 
-              <p style={{height:"46px"}}  >  {description.split("").length > 30 ? description.split("").slice(1,30).join("")+ "..." : description }  </p>
+              <p style={{height:"46px"}}  >  {description.split("").length > 30 ? description.split("").slice(1,25).join("")+ "..." : description }  </p>
                </li>
             
              

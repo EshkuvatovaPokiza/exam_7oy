@@ -33,7 +33,9 @@ console.log(data)
         <tbody>
             <tr className={classes.space}  ></tr>
            {
-            songs?.tracks?.items?.map( (song ,ind) =>
+          songs?.tracks?.items?.filter(m => {if(m?.track?.preview_url!=null)   {
+            return m 
+         } }).map( (song ,ind) =>
                 <tr key={song.track.id}    >
 <td> {ind+1}  </td>
 <td>  <div  className={classes.song__info}      >   

@@ -34,7 +34,7 @@
     display: flex;
     gap: 32px;
     margin-top: 32px;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 60px;
     background-color:rgba(0, 0, 0, 0.1) ;
     box-shadow: 0px 12px 0px 230px rgba(0, 0, 0, 0.1);
@@ -60,23 +60,25 @@
 
     h1{
         color: $main-text-color;
-        font-size: 122px;
+        font-size: 90px;
         font-weight: 900;
         font-style: normal;
         letter-spacing: -7.32px;
         line-height: normal;
+        // white-space: nowrap;
     }
 }
 .artist__name{
     color: $main-text-color;
-    font-size: $main-medium-font-size;
+    font-size:16px;
     font-style: normal;
     font-weight: 450;
     line-height: normal;
+    white-space: nowrap;
 }
 .more{
     color: rgba(255, 255, 255, 0.70);
-    font-size: $main-medium-font-size;
+    font-size: $main-small-font-size;
     font-style: normal;
     font-weight: 450;
     line-height: normal;
@@ -84,7 +86,7 @@
 
 .artists__names{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     h2 {
         display: flex;
@@ -92,6 +94,8 @@
         
         span{
             color: $main-text-color;
+            font-size: 16px;
+            white-space: nowrap;
         }
     }
 }

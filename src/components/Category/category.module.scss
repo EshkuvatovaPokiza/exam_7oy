@@ -10,7 +10,8 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
+        // justify-content:space-between;
     }
     h2{
         color: $main-text-color;
@@ -35,17 +36,17 @@
 .category__menu{
     display: grid;
     grid-template-columns: repeat(4,220px) ;
-    gap: 30px;
+    gap: 35px;
     li{
         width: 220px;
-        height: 324px;
+        height: 284px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 8px;
+        gap: 5px;
         background-color:rgba(255, 255, 255, 0.04) ;
-        padding: 20px;
+        padding: 10px;
         fill: url(<path-to-image>), lightgray -215.704px -66.182px / 581.818% 330.736% no-repeat;
        filter: drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.35));
         img{

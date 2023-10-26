@@ -55,15 +55,14 @@ console.log(image)
   <div className={classes.playlist__content}  >
 
     <strong>Public Playlist</strong>
-    <h1> {onePlayList?.name} </h1>
+    <h1> {onePlayList?.name?.split("").slice(0,20).join("")+ "..."} </h1>
   <div className={classes.artists__names}  >
 
   <h2> {onePlayList?.tracks?.items?.slice(0,2)?.map( item=>
     <span className={classes.artists__names}   key={item.id}  >
 
           {item?.track?.artists[0]?.name?.toLowerCase().split("").toSpliced(0  , 1 , item?.track?.artists[0]?.name?.charAt(0).toUpperCase()).join("") + "  ,  "  } 
-          {item?.track?.artists[1]?.name?.toLowerCase().split("").toSpliced(0  , 1 , item?.track?.artists[0]?.name?.charAt(0).toUpperCase()).join("")  } 
-  
+         
     </span>
 
      )} 
