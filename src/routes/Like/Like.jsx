@@ -93,7 +93,7 @@ const Like = () => {
  </div> </td>
 <td className={classes.album__name}  >  {product?.track?.name.toLowerCase().split("").toSpliced(0  , 1 , product?.track?.name.charAt(0).toUpperCase()).join("")}  </td>
 <td><div   onClick={()=> dispatch(Unlike(product))}  > <BsFillHeartFill style={ {color:"#65D36E" , fontSize:"30px"}} />  </div></td>
-<td  className={classes.time}  >    <span> time </span> </td>
+<td  className={classes.time}  >    <span> {Math.floor((product?.track?.duration_ms)/60000)} : {Math.floor(((product?.track?.duration_ms)%60000)/1000).toString().padStart(2,'0')}  </span> </td>
 
                 </tr>
 

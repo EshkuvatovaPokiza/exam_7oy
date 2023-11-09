@@ -46,7 +46,7 @@ const AudioPlay = () => {
        <div  className={classes.audioplay__image}  > {MusicState===true ?     <img src={music[0]?.track?.album?.images[0]?.url} alt="" />  :<></> } </div>
          <div className={classes.player__info__content}  >   <p> {MusicState===true ? music[0]?.track?.name :<></>} </p>
             <strong>   {MusicState===true ?music[0]?.track?.album?.artists[0]?.name :<></>}  </strong></div>
-           { MusicState===true ?  <BsFillHeartFill/>  :<></>}
+             { MusicState===true?   <BsFillHeartFill  style={ {color:"#65D36E" , fontSize:"26px"}}  />  :<></>}
          </div>
         
         <div className={classes.player__component}  >

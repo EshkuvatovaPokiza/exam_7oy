@@ -5,11 +5,11 @@
     margin-top: $main-large-font-size;
     width: 100%;
     background: rgba(18, 18, 18, 1);
-     box-shadow: 0px 0px 0px 40px rgba(18, 18, 18, 1);
+     box-shadow: 0px 0px 0px 30px rgba(18, 18, 18, 1);
 }
 .songs__title{
     width: 100%;
-    padding: 0 60px 0 20px;
+    padding: 0 40px 0 20px;
     border-collapse: collapse;
     
     thead{
@@ -65,7 +65,7 @@
 .song__info{
     display: flex;
     gap: 21px;
-    width: 442px;
+    width: 400px;
     img{
         width: 52px ;
         height: 52px;
@@ -120,7 +120,7 @@
 }
 .album__name{
 
-    width: 345px;
+    width: 200px;
     color: $main-gray-text-color;    
     font-size: $main-normal-font-size;
     font-weight: 450;

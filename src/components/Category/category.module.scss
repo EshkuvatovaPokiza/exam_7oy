@@ -35,11 +35,11 @@
 }
 .category__menu{
     display: grid;
-    grid-template-columns: repeat(4,220px) ;
-    gap: 35px;
+    grid-template-columns: repeat(4,160px) ;
+    gap: 30px;
     li{
-        width: 220px;
-        height: 284px;
+        width: 160px;
+        height: 260px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -50,8 +50,8 @@
         fill: url(<path-to-image>), lightgray -215.704px -66.182px / 581.818% 330.736% no-repeat;
        filter: drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.35));
         img{
-            width: 160px;
-            height: 160px;
+            width: 130px;
+            height: 130px;
             border-radius: $main-border-radius;
             margin: 0 auto;
         }

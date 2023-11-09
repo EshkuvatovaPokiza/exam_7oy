@@ -73,7 +73,9 @@ console.log(image)
    <span className={classes.more}  > and more </span>
   </div>
 
-   <p   className={classes.madefor__you}  > Made for <span   className={classes.for}  > { onePlayList?.owner?.display_name} </span>  <span> {onePlayList?.tracks?.total} songs </span>  
+   <p   className={classes.madefor__you}  > Made for <span   className={classes.for}  > { onePlayList?.owner?.display_name} </span>  <span> {onePlayList?.tracks?.items?.filter(m => {if(m?.track?.preview_url!=null)   {
+            return m 
+         } })?.length} songs </span>  
    
     <span>
    {
